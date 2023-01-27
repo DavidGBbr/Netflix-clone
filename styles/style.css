@@ -1,1 +1,159 @@
-@import url("./banner.css");
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: #222;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+
+h2,
+h3 {
+  font-weight: lighter;
+}
+
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+}
+#container {
+  background: linear-gradient(rgba(0, 0, 0, 0.247), rgb(0, 0, 0)),
+    url("../assets/background.jpg");
+  height: 100vh;
+  padding: 1.56rem;
+}
+
+#logo {
+  width: 10rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid #fff;
+  width: 113px;
+}
+
+option {
+  background-color: gray;
+}
+
+#btn-enter {
+  padding: 0.5rem 1.06rem;
+  font-size: 0.875rem;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+main {
+  text-align: center;
+  margin-top: 6.25rem;
+}
+
+.section-title {
+  font-size: 3.625rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+#email {
+  height: 3.125rem;
+  width: 25.25rem;
+  padding: 0.625rem;
+  font-size: 1.125rem;
+}
+
+#btn-start {
+  width: 12.5rem;
+  font-size: 1.75rem;
+  color: #fff;
+  background: #e50914;
+  border: none;
+}
+
+section {
+  background: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 950px) {
+  #logo {
+    width: 108px;
+  }
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #btn-start {
+    display: inline;
+    margin-top: 10px;
+    font-size: 1rem;
+    width: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+
+  section {
+    flex-direction: column;
+  }
+  br {
+    display: none;
+  }
+
+  .text-content {
+    max-width: 80%;
+    text-align: center;
+    order: 0;
+  }
+
+  section img {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #container {
+    max-height: 500px;
+  }
+  #logo {
+    width: 88px;
+  }
+  #email {
+    padding: 0px;
+    font-size: 1rem;
+  }
+  form input {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .section-title {
+    font-size: 1.75rem;
+  }
+  .section-subtitle,
+  h3 {
+    font-size: 1.125rem;
+  }
+}

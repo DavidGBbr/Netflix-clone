@@ -96,6 +96,69 @@ section {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  padding: 20px;
+}
+
+#section-faq {
+  flex-direction: column;
+}
+
+#faq {
+  width: 75%;
+}
+
+#faq dt,
+dd {
+  color: #fff;
+  font-size: 26px;
+  background-color: #303030;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+}
+
+#faq dt {
+  margin-top: 10px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.decoration-x {
+  fill: #fff;
+  height: 1em;
+  transform: rotate(45deg);
+}
+
+#faq dd {
+  margin: 0px;
+  display: none;
+}
+
+#faq dd a {
+  color: #fff;
+}
+
+#faq dt.active .decoration-x {
+  transform: rotate(0deg);
+}
+
+#faq dd.active {
+  display: block;
+  animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
 }
 
 @media screen and (max-width: 950px) {

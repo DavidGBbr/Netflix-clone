@@ -74,14 +74,14 @@ form {
   justify-content: center;
 }
 
-#email {
+.email {
   height: 3.125rem;
   width: 25.25rem;
   padding: 0.625rem;
   font-size: 1.125rem;
 }
 
-#btn-start {
+.btn-start {
   width: 12.5rem;
   font-size: 1.75rem;
   color: #fff;
@@ -157,8 +157,75 @@ dd {
 
   to {
     opacity: 1;
-    max-height: 500px;
+    max-height: 200vh;
   }
+}
+
+footer {
+  background: #000;
+  margin-top: 10px;
+  padding: 70px 45px 0px 45px;
+  color: #737373;
+  font-size: 1em;
+  min-width: 190px;
+}
+
+#footer-content {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.footer-top {
+  margin: 0 0 30px;
+}
+
+footer a {
+  color: #737373;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#footer-list {
+  max-width: 1000px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#footer-list li {
+  box-sizing: border-box;
+  font-size: 13px;
+  min-width: 100px;
+  width: 25%;
+  display: inline-block;
+  padding: 0 12px 0 0;
+  margin-bottom: 16px;
+}
+
+#footer-select {
+  margin-top: 20px;
+  border-radius: 5px;
+  border-color: #737373;
+  color: #737373;
+  min-width: 100px;
+  width: 15%;
+}
+
+#footer-select option {
+  background: #000;
+  color: #fff;
+}
+
+#footer-country {
+  font-size: 13px;
+  margin-top: 24px;
+  margin-bottom: 0;
+  padding-bottom: 13px;
 }
 
 @media screen and (max-width: 950px) {
